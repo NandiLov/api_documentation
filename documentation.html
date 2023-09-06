@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriData API Documentation</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/documentation.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Food API Documentation</h1>
+        <p>Welcome to the Food API documentation. This API provides information about various foods, recipes, and nutritional data.</p>
+    </header>
+
+    <section class="endpoint">
+        <h2>API Endpoints</h2>
+        <p>Below are the available API endpoints:</p>
+
+        <div class="endpoint-item">
+            <h3>GET /foods</h3>
+            <p>Retrieve a list of all available foods.</p>
+            <pre><code>GET /api/foods</code></pre>
+        </div>
+
+        <!-- Add more endpoints and descriptions as needed -->
+    </section>
+
+    <section class="authentication">
+        <h2>Authentication</h2>
+        <p>Authentication is required to access certain endpoints. Follow the authentication process to obtain an API key.</p>
+        <pre><code>Authorization: Bearer your_api_key</code></pre>
+    </section>
+
+    <section class="response">
+        <h2>Response Format</h2>
+        <p>The API responds with data in JSON format. Here is an example response:</p>
+        <pre><code>{
+    "food_id": 123,
+    "food_name": "Example Food",
+    "calories": 250,
+    "protein": 10,
+    "carbohydrates": 30,
+    "fat": 12
+}</code></pre>
+    </section>
+
+    <section class="usage">
+        <h2>API Usage</h2>
+        <p>To use the API, make HTTP requests to the respective endpoints. Ensure proper authentication when required.</p>
+        <p>Example request using cURL:</p>
+        <pre><code>curl -X GET https://api.example.com/api/foods -H "Authorization: Bearer your_api_key"</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Food API. All rights reserved.</p>
+    </footer>
+</body>
+</html>
