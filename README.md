@@ -28,14 +28,14 @@ All requests to the API must include your API key in the request headers as foll
 ```http
 Authorization: Bearer YOUR_API_KEY
 
-### Endpoints
+Endpoints
 The Food API offers the following endpoints to access food-related data:
 
-### 1. Ingredient Information
+1. Ingredient Information
 Endpoint: /ingredients/{ingredient_id}
 Description: Retrieve detailed information about a specific ingredient.
 HTTP Method: GET
-### 2. Recipe Search
+2. Recipe Search
 Endpoint: /recipes/search
 Description: Search for recipes based on various criteria such as ingredients, cuisine, and dietary restrictions.
 HTTP Method: GET
